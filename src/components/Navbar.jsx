@@ -77,6 +77,10 @@ const Navbar = ({setMode, mode}) => {
           <MenuItem>Profile</MenuItem>
           <MenuItem>My account</MenuItem>
           <MenuItem>Logout</MenuItem>
+          <Badge>
+            {/* <ModeNight /> */}
+            <Switch defaultChecked={true} color="default" onChange={e => setMode(mode === "dark" ? "light" : "dark")} />
+            </Badge>
         </Menu>
       </AppBar>
     </>
